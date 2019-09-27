@@ -45,11 +45,13 @@ nav h1{
 
 }
 .pildid_2{
-	display:flex;
-	flex-wrap: flex
+	
 }
 .pilt_tekst{
-	width:50%;
+	display:flex;
+	flex-wrap: flex
+	
+	
 	
 }
 .pilt_tekst img{
