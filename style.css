@@ -5,7 +5,7 @@ body{
     line-height:1.5;
     padding:0;
     margin:0;
-    background:pink;
+    background:white;
 
 }
 header{
@@ -25,6 +25,10 @@ nav button{
 	
 	color:white;
 }
+nav button:hover{
+	background:lightblue;
+}
+
 nav h1{
 	float:left;
 	font-size:30px;
@@ -35,6 +39,7 @@ nav h1{
 	margin-left:30px;
 	background:purple;
 	color:lightblue;
+	
 
 }
 nav .robots{
@@ -45,9 +50,9 @@ nav .robots{
 }
 .banner{
 	height:300px;
-	background-image: linear-gradient(to bottom, turquoise, #edf582);
+	background:#fffede;
 	padding:20px;
-	color:darkgreen;
+	color:#383836;
 }
 .banner h1{
 	padding-top:50px;
@@ -60,17 +65,25 @@ nav .robots{
 .pildid{
 	display:flex;
 	flex-wrap:wrap;
-	background:#edf582;
-	padding-top:30px;
+	background:#e5d5e6;
+	padding-top:10px;
+}
+.pildid img{
+	height:80%;
+}
+.pildid h3{
+	margin-top:0px;
+	color:#383836;
 }
 .pildid_pealkiri{
 	text-align: center;
-	background:#edf582;
+	background:#e5d5e6;
 	padding:10px;
 }	
 .pildid_pealkiri h1{
 	margin:0;
 	padding:0;
+	color:#383836;
 
 }
 .pildid_pildid img{
@@ -87,11 +100,17 @@ nav .robots{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-image: linear-gradient(to top, pink, #edf582);
+	background:white;
 
 	
 }
 .pilt_tekst{
+	display:flex;
+	flex-wrap: flex;
+	align-items: center;
+	width:60%;
+}
+.pilt_tekst_reverse{
 	display:flex;
 	flex-wrap: flex;
 	align-items: center;
@@ -106,6 +125,88 @@ footer{
     background-color:purple;
     text-align:center;
     border-radius:500px 500px 0 0;
-    
-    
+ }
+ @media only screen and (max-width: 860px) {
+  header{
+  	height:140px;
+  	padding-top:5px;
+
+   
+  }
+  header nav{
+  	
+  	
+  	
+
+  }
+  nav h1{
+  	width:150px;
+
+  	margin:5px;
+  }
+  nav button{
+  	width:38%;
+  	padding:0;
+  	margin:2px;
+  	
+  }
+  .banner  {
+  	margin:0px;
+  	height:100px;
+  	text-align:center;
+  }
+  	
+  
+  .banner h1 {
+  	margin:0px;
+  	padding:0px;
+  	font-size:2em;
+  }
+  .banner p {
+  	margin:0px;
+  	padding:0px;
+  	font-size:1.5em;
+  }
+  .pildid{
+  	flex-direction: column;
+  	
+  	align-items: center;
+  }
+  .pildid_pildid{
+  	width:70%;
+  }
+  .pilt_tekst{
+  	flex-direction: column;
+  	width:90%;
+  }
+  .pilt_tekst_reverse{
+	flex-direction: column-reverse;
+	width:90%;
 }
+
+@media only screen and (max-width: 400px) {
+  nav button{
+  	width:3.5em;
+  }
+  nav h1 .robots{
+  	font-size:1.1em;
+  }
+  nav h1{
+  	width:120px;
+  	margin:0px;
+  }
+   .banner h1{
+   	font-size:1.5em;
+
+   }
+   .pildid_2 img{
+   	width:100%;
+
+   }
+  }
+
+
+
+
+	
+
